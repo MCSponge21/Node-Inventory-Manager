@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/assets/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catergory</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="headeritems">
+                <a href="http://localhost:8000/"><img src="/public/assets/logo.png" height="40px"></a>
+                <div class="cati">
+                    <a href="http://localhost:8000/categories" >Categories</a>
+                    <a href="http://localhost:8000/items">Items</a>
+                </div>
+            </div>
+        </div>
+        <div class="catinfo">
+            <div class="catinfol">
+                <h2>All Categories</h2>
+                <p>Every category of hardware that we have to offer.</p>
+            </div>
+            <div class="catinfor">
+                <form action="http://localhost:8000/categories/create" method="get">
+                    <button class="homebc">Add Category</button>
+                </form>
+            </div>
+        </div>
+        <div class="category">
+            <% compList.map((comp) =>{ %>
+                <div class="cblock">
+                    <% if(!comp.components[0]){ %>
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/022/014/063/small_2x/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg" height="150px" width="150px">
+                    <%}else{%> 
+                        <img src=<%= comp.components[0].image %> alt="" height="150px" width="150px">
+                    <%}%>
+                    <div class="catname">
+                        <%= comp.component %>
+                        <form action="http://localhost:8000/components/<%= comp.component %>" method="get">
+                            <button type="submit" class="homeb">View</button>
+                        </form>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+
+    
+</body>
+</html>

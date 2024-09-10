@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/assets/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="headeritems">
+                <a href="http://localhost:8000/"><img src="/public/assets/logo.png" height="40px"></a>
+                <div class="cati">
+                    <a href="http://localhost:8000/categories" style="text-decoration: none" >Categories</a>
+                    <a href="http://localhost:8000/items" style="text-decoration: none" >Items</a>
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <div class="homel">
+                <div><h4>Welcome to the PC Inventory Mangament System.</h4>Browse our inventory, add to it, remove from it and update it. What will you create?</div>
+                <div class="homebs">
+                    <form action="http://localhost:8000/categories" method="get">
+                        <button class="homeb" type="submit">Categories</button>
+                    </form>
+                    <form action="http://localhost:8000/items" method="get">
+                        <button class="homeb">Items</button>
+                    </form>
+                </div>
+            </div>
+            <div><img src="https://i.redd.it/2mfzw5qe76e91.jpg" alt="" height="200px"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

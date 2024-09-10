@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/assets/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="headeritems">
+                <a href="http://localhost:8000/"><img src="/public/assets/logo.png" height="40px"></a>
+                <div class="cati">
+                    <a href="http://localhost:8000/categories">Categories</a>
+                    <a href="http://localhost:8000/items">Items</a>
+                </div>
+            </div>
+        </div>
+        <div class="edit">
+            <h3>Create Category</h3>
+            <form action="http://localhost:8000/categories/create" class="formblock" method="post">
+                <input type="text" name="component" id="" placeholder="Name">
+                <input type="text" name="description" id="" placeholder="Description" class="editdesc">
+                <button type="submit" class="homeb">Create</button>
+            </form>
+        </div>
+    </div class="main">
+</body>
+</html>

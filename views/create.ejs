@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/assets/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a component</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="headeritems">
+                <a href="http://localhost:8000/"><img src="/public/assets/logo.png" height="40px"></a>
+                <div class="cati">
+                    <a href="http://localhost:8000/categories">Categories</a>
+                    <a href="http://localhost:8000/items">Items</a>
+                </div>
+            </div>
+        </div>
+       <div class="edit">
+         Add a component
+         <form action="http://localhost:8000/components/create/<%=identifier%>" class="formblock" method="post">
+             <input type="text" name="part" placeholder="Name">
+             <input type="text" name="stock" placeholder="Quantity">
+             <input type="text" name="price"  placeholder="Price">
+             <input type="text" name="image" placeholder="Image URL">
+             <button type="submit">Add</button>
+         </form>
+       </div>
+    </div class="main">
+</body>
+</html>

@@ -1,0 +1,204 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background-color: rgb(248, 247, 247);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    background-color: rgb(251, 147, 77);
+}
+
+.cati{
+    display: flex;
+    gap: 10px;
+    color: gray;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+a:link {
+    color: rgb(29, 29, 29);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(29, 29, 29);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.home{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+    background-color: rgb(238, 238, 238);
+    height: 400px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+.homel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.homeb{
+    font-size: 15px;
+    border: 0;
+    width: 140px;
+    height: 30px;
+    background-color: rgb(255, 166, 0);
+    color: rgb(47, 47, 47);
+}
+
+.headeritems{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category{
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    height: 400px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.catinfo{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catname{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catinfor{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catinfol{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catinfov{
+    background-color: rgba(128, 128, 128, 0);
+    height: 400px;
+    width: 50%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homebc{
+    font-size: 15px;
+    border: 0;
+    width: 130px;
+    height: 30px;
+    background-color: orange;
+    color: rgb(47, 47, 47);
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homebs{
+    display: flex;
+    gap: 10px;
+}
+
+.block{
+    background-color: rgb(209, 209, 209);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 130px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cblock{
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 160px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.edelete{
+    display: flex;
+    gap: 5px;
+}
+
+.edit{margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editdesc{
+    display: flex;
+    height: 60px;
+}
+
+.formblock{
+    background-color: rgba(209, 209, 209, 0);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 260px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img{
+    height: 130px;
+    width: 130px;
+}

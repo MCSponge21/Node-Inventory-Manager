@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/assets/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="headeritems">
+                <a href="http://localhost:8000/"><img src="/public/assets/logo.png" height="40px"></a>
+                <div class="cati">
+                    <a href="http://localhost:8000/categories">Categories</a>
+                    <a href="http://localhost:8000/items">Items</a>
+                </div>
+            </div>
+        </div>
+        <div class="catinfo">
+            
+            <div class="catinfol">
+                <a href="http://localhost:8000/categories"><img height="20px" src="https://w7.pngwing.com/pngs/666/148/png-transparent-app-application-arrow-back-button-design-direction-dot-element-flat.png" alt=""></a>
+                <h2>All of our items</h2>
+                <p>Take a look at everything that we have in our inventory.</p>
+            </div>
+            <div class="catinfor">
+            </div>
+        </div>
+        <div class="category">
+            <% for(var i = 0; i < compList.length; i++){ 
+                compList[i].components.map((part)=>{ %>
+                    <div class="cblock">
+                            <div class="image">
+                                <img src = <%= part.image%> alt="" width="100px" height="100px">
+                            </div>
+                            <div class="part">
+                                <%= part.part %>
+                            </div>
+                            <div>
+                                <%= part.price %>
+                            </div>
+                            <div class="stock">
+                                Quantity: <%= part.stock %>
+                            </div>
+                            <form action="http://localhost:8000/components/view/<%= part.id%>">
+                                <button class="homebc">View Item</button>
+                            </form>
+                        </div>
+                <%})
+            }%>
+        </div>
+    </div>
+    
+</body>
+</html>
